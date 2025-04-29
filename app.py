@@ -183,15 +183,14 @@ if st.button("Get Player Statistics"):
 
 # Core stats input
 st.header("Player Statistics")
-Mat = st.number_input("Matches", min_value=0, value=st.session_state['Mat'], key="Mat")
-Inns = st.number_input("Innings", min_value=0, value=st.session_state['Inns'], key="Inns")
-NO = st.number_input("Not Outs", min_value=0, value=st.session_state['NO'], key="NO")
-Runs = st.number_input("Runs", min_value=0, value=st.session_state['Runs'], key="Runs")
-
-SR = st.number_input("Strike Rate", min_value=0.0, value=float(st.session_state['SR']), key="SR", format="%.2f")
-Centuries = st.number_input("100s", min_value=0, value=st.session_state['Centuries'], key="Centuries")
-Fifties = st.number_input("50s", min_value=0, value=st.session_state['Fifties'], key="Fifties")
-Ducks = st.number_input("0s", min_value=0, value=st.session_state['Ducks'], key="Ducks")
+Mat = st.number_input("Matches", min_value=0, key="Mat")
+Inns = st.number_input("Innings", min_value=0, key="Inns")
+NO = st.number_input("Not Outs", min_value=0, key="NO")
+Runs = st.number_input("Runs", min_value=0, key="Runs")
+SR = st.number_input("Strike Rate", min_value=0.0, key="SR", format="%.2f")
+Centuries = st.number_input("100s", min_value=0, key="Centuries")
+Fifties = st.number_input("50s", min_value=0, key="Fifties")
+Ducks = st.number_input("0s", min_value=0, key="Ducks")
 
 if st.button("Predict Performance"):
     try:
